@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D0E7D2"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TÌM TÀI KHOẢN NHÂN VIÊN"
+        android:layout_marginTop="30dp"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Chọn mã nhân viên cần tìm :"
+        android:textSize="18dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tv_finding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     />
+    <Spinner
+        android:id="@+id/mng_staff_find_cbx"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/square_bg"/>
+    <ImageButton
+        android:id="@+id/staff_find_no_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_cancel"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:background="@null"
+        />
+    <ImageButton
+        android:id="@+id/staff_find_yes_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_add"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="180dp"
+        android:background="@null"
+        />
+
+</LinearLayout>

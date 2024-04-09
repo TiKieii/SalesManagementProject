@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3D8361"
+    tools:context=".mng_staff_salary_calculator">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/wave_2"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/nap"/>
+
+    <ImageButton
+        android:id="@+id/salary_cal_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_back"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-60dp"
+        android:background="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trở lại"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="-10dp"/>
+
+    <ImageButton
+        android:id="@+id/salary_cal_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_new"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="-60dp"
+        android:background="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xong"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="-10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính Lương nhân viên"
+        android:background="#186F65"
+        android:textColor="#F5EEC8"
+        android:fontFamily="@font/endcodeseexbold"
+        android:textSize="30dp" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:background="@drawable/square_bg"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/salary_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Mã nhân viên :"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <Spinner
+                android:id="@+id/salary_cal_cbx"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/square_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-75dp"
+                android:text="Tháng :"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <Spinner
+                android:id="@+id/salary_cal_month_cbx"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="200dp"
+                android:background="@drawable/square_bg" />
+
+            <TextView
+                android:id="@+id/wd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Họ tên Nhân viên:"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/salary_cal_name"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/square_bg"
+                android:fontFamily="@font/icielunisansheavy_1"
+                android:gravity="center"
+                android:text="tennv"
+                android:textColor="#ccd5ae"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Phòng ban :"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/salary_cal_pb"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/square_bg"
+                android:fontFamily="@font/icielunisansheavy_1"
+                android:gravity="center"
+                android:textColor="#ccd5ae"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-75dp"
+                android:text="Chức vụ :"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/salary_cal_cv"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="200dp"
+                android:background="@drawable/square_bg"
+                android:fontFamily="@font/icielunisansheavy_1"
+                android:gravity="center"
+                android:textColor="#ccd5ae"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Lương cơ bản :"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/salary_cal_or_salary"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/square_bg"
+                android:fontFamily="@font/icielunisansheavy_1"
+                android:gravity="center"
+                android:textColor="#ccd5ae"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ngày công :"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/salary_cal_onday"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/square_bg"
+                    android:fontFamily="@font/icielunisansheavy_1"
+                    android:gravity="center"
+                    android:textColor="#ccd5ae"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="-75dp"
+                    android:text="Ngày phép :"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/salary_cal_off"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="140dp"
+                    android:background="@drawable/square_bg"
+                    android:fontFamily="@font/icielunisansheavy_1"
+                    android:gravity="center"
+                    android:textColor="#ccd5ae"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="-75dp"
+                    android:text="Tăng ca :"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/salary_cal_OT"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="270dp"
+                    android:background="@drawable/square_bg"
+                    android:fontFamily="@font/icielunisansheavy_1"
+                    android:gravity="center"
+                    android:textColor="#ccd5ae"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Thưởng :"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/salary_cal_thuong"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_bg"
+                android:fontFamily="@font/icielunisansheavy_1"
+                android:gravity="center"
+                android:textColor="#ccd5ae"
+                android:textSize="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-80dp"
+                android:text="Phạt :"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/salary_cal_phat"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_bg"
+                android:fontFamily="@font/icielunisansheavy_1"
+                android:gravity="center"
+                android:textColor="#ccd5ae"
+                android:textSize="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Ghi chú :"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/salary_cal_note"
+                android:layout_width="230dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/square_bg"
+                android:fontFamily="@font/icielunisansheavy_1"
+                android:gravity="center"
+                android:textColor="#ccd5ae"
+                android:textSize="23dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/salary_cal_check"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Tính Lương"
+                android:layout_marginTop="-70dp"
+                android:layout_marginLeft="270dp"
+                android:background="@drawable/square_bg"
+                android:textSize="25dp"
+                android:fontFamily="@font/boostblack_ex1"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Lương thực lãnh :"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/salary_cal_temp_salary"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/square_bg"
+                android:fontFamily="@font/icielunisansheavy_1"
+                android:gravity="center"
+                android:textColor="#ccd5ae"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/salary_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+    </HorizontalScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/salary_cal_save"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Lưu"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/square_bg"
+        android:layout_marginLeft="200dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/boostblack_ex1"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/salary_cal_update"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Cập nhật"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/square_bg"
+        android:layout_gravity="left"
+        android:textSize="25dp"
+        android:fontFamily="@font/boostblack_ex1"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

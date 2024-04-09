@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#143601"
+    android:orientation="vertical"
+    tools:context=".staff_xemluong">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="00dp"
+        android:background="@drawable/wave_2"
+        />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/nap"
+        />
+    <ImageButton
+        android:id="@+id/staff_xl_IB_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logout_2"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-90dp"
+        android:background="@null"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="600dp"
+                android:layout_height="600dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/icielunisansheavy_1"
+                    android:text="Họ tên : "
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/staff_xl_hoten"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-50dp"
+                    android:background="@drawable/square_bg"
+                    android:fontFamily="@font/icielunisansheavy_1"
+                    android:gravity="center"
+                    android:text="lcb : "
+                    android:textColor="#ccd5ae"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Ngày công :"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/salary_xl_onday"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/square_bg"
+                        android:fontFamily="@font/icielunisansheavy_1"
+                        android:gravity="center"
+                        android:textColor="#ccd5ae"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="-75dp"
+                        android:text="Ngày phép :"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/salary_xl_off"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="140dp"
+                        android:background="@drawable/square_bg"
+                        android:fontFamily="@font/icielunisansheavy_1"
+                        android:gravity="center"
+                        android:textColor="#ccd5ae"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="-75dp"
+                        android:text="Tăng ca :"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/salary_xl_OT"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="270dp"
+                        android:background="@drawable/square_bg"
+                        android:fontFamily="@font/icielunisansheavy_1"
+                        android:gravity="center"
+                        android:textColor="#ccd5ae"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/icielunisansheavy_1"
+                    android:text="Lương Cơ Bản : "
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/staff_xl_lcb"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="-30dp"
+                    android:background="@drawable/square_bg"
+                    android:fontFamily="@font/icielunisansheavy_1"
+                    android:gravity="center"
+                    android:text="lcb : "
+                    android:textColor="#ccd5ae"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/icielunisansheavy_1"
+                        android:text="Tiền Thưởng : "
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/staff_xl_tienthuuong"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="-20dp"
+                        android:background="@drawable/square_bg"
+                        android:fontFamily="@font/icielunisansheavy_1"
+                        android:gravity="center"
+                        android:text="tt : "
+                        android:textColor="#ccd5ae"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/icielunisansheavy_1"
+                        android:text="Tiền Phạt : "
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/staff_xl_tienphat"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="-20dp"
+                        android:background="@drawable/square_bg"
+                        android:fontFamily="@font/icielunisansheavy_1"
+                        android:gravity="center"
+                        android:text="tp : "
+                        android:textColor="#ccd5ae"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/staff_xl_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="280dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@null"
+                        android:src="@drawable/info" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="265dp"
+                        android:text="Xem chi tiết"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/icielunisansheavy_1"
+                        android:text="Tổng Lương : "
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/staff_xl_sumluong"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="-20dp"
+                        android:background="@drawable/square_bg"
+                        android:fontFamily="@font/icielunisansheavy_1"
+                        android:gravity="center"
+                        android:text="tl : "
+                        android:textColor="#ccd5ae"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

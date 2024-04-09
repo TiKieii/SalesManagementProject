@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#023e8a"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/nap"
+        />
+    <ImageButton
+        android:id="@+id/staff_xl_IB_cancel_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_cancel"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-100dp"
+        android:background="@null"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn tháng cần xem :"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <Spinner
+        android:id="@+id/staff_xl_cbb_dia"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/square_bg"
+        android:layout_marginTop="20dp"/>
+    <ImageButton
+        android:id="@+id/staff_xl_yes_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/check"
+        android:background="@null"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/staff_xl_tv_anmattieuroicooi_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

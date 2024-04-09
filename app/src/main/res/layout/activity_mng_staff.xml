@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D8361"
+    tools:context=".mng_staff"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="00dp"
+        android:background="@drawable/wave_2"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:background="#186F65"
+        android:fontFamily="@font/endcodeseexbold"
+        android:paddingTop="20dp"
+        android:text="Quản lý nhân viên"
+        android:textColor="#F5EEC8"
+        android:textSize="25dp" />
+
+    <ImageButton
+        android:id="@+id/mng_staff_list_refresh"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="-50dp"
+        android:background="@null"
+        android:src="@drawable/lammoi" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Làm mới"
+        android:textColor="@color/white"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="-5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mng_staff_list_rcv"
+        android:layout_width="350dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="500dp"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:ignore="MissingConstraints" >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <ImageButton
+        android:id="@+id/mng_staff_list_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_staff"
+        android:background="@null"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:text="Thêm mới"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/mng_staff_list_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-50dp"
+        android:background="@null"
+        android:src="@drawable/btn_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Trở lại"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/mng_staff_list_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:background="@null"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="-95dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="290dp"
+        android:text="Tìm kiếm"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+
+</LinearLayout>

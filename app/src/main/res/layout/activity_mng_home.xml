@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D8361"
+    tools:context=".mng_home"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="00dp"
+        android:background="@drawable/wave_2"
+        />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/nap"/>
+
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Welcome !"
+        android:textSize="25dp"
+        android:fontFamily="@font/boostblack_ex1"
+        android:textColor="#F5EEC8"
+        />
+    <TextView
+        android:id="@+id/mng_home_tenquanly"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tenquanly"
+        android:textSize="40dp"
+        android:fontFamily="@font/boostblack_ex1"
+        android:textColor="#F5EEC8"
+        />
+
+    <TableLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageButton
+                android:id="@+id/mng_home_btn_staff"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/staff"
+                android:layout_marginLeft="20dp"
+                android:background="@null"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="-90dp"
+                android:textColor="@color/white"
+                android:text="Quản lý nhân viên"/>
+
+            <ImageButton
+                android:id="@+id/mng_home_btn_room"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/room"
+                android:layout_marginLeft="30dp"
+                android:background="@null"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="-88dp"
+                android:textColor="@color/white"
+                android:text="Quản lý phòng ban"/>
+
+            <ImageButton
+                android:id="@+id/mng_home_btn_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ranking"
+                android:layout_marginLeft="30dp"
+                android:background="@null"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="-80dp"
+                android:textColor="@color/white"
+                android:text="Quản lý chức vụ"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <ImageButton
+                android:id="@+id/mng_home_btn_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/salary"
+                android:layout_marginLeft="30dp"
+                android:background="@null"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="-80dp"
+                android:textColor="@color/white"
+                android:text="Quản lý lương"/>
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mng_home_btn_del"
+        android:layout_width="200dp"
+        android:background="@drawable/square_bg"
+        android:text="Xóa tài khoản"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="-70dp"
+        android:textSize="20dp"
+        android:layout_height="60dp"/>
+
+    <ImageButton
+        android:id="@+id/mng_home_btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logout_2"
+        android:background="@null"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất"
+        android:textColor="@color/white"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="250dp"
+        />
+
+
+
+
+
+</LinearLayout>
